@@ -1,0 +1,3 @@
+<?php
+// Migration to follow!
+?>
