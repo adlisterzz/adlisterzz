@@ -80,16 +80,19 @@
         <div class="col-md-4">
           <h2>Propane1</h2>
           <p>Brief Description! </p>
+          <img src="../img/Coleman_Propane.jpeg" alt="ColemanPropane" height="120" width="120">
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Propane2</h2>
           <p>Brief Description!  </p>
+          <img src="../img/blueRhino_Propane.jpeg" alt="BlueRhino" height="120" width="120">
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Propane3</h2>
           <p>Brief Description! </p>
+          <img src="../img/bernzomatic_Propane.jpeg" alt="Bernzomatic" height="120" width="120">
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
