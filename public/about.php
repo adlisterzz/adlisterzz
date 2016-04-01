@@ -40,69 +40,47 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container margin100">
 
-      <div class="starter-template">
-        <h1>About Page</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <div class="jumbotron stricklandPic">
+      
       </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
     </div>
        
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="column">
-        <div class="col-md-2">
-          <img class="img-circle" src="/img/BuckStrickland.png" width="140" height="140">
-          <h2>Owner</h2>
-          <h3>Buck Strickland</h3>
-          <p> Choosing the right fuel for the right job is always important. Whether you're overcooking last years freezer-burned deer venison or powering a generator in your remote greenhouse, we've got you covered. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-2">
-          <img class="img-circle" src="/img/Hank_Hill.png" width="140" height="140">
-          <h2>Assistant Manager</h2>
-          <h3>Hank Hill</h3>
-          <p> You have propane. We have accessories. Camping? RVing? Does a friend need to hold your beer for this one? </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-2">
-          <img class="img-circle" src="/img/JoeJack.jpg" width="140" height="140">
-          <h2>Joe Jack</h2>
-          <p> Choosing the right fuel for the right job is always important. Whether you're overcooking last years freezer-burned deer venison or powering a generator in your remote greenhouse, we've got you covered. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-2">
-          <img class="img-circle" src="/img/Enrique.jpg" width="140" height="140">
-          <h2>Enrique</h2>
-          <p> You have propane. We have accessories. Camping? RVing? Does a friend need to hold your beer for this one? </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-2">
-          <img class="img-circle" src="/img/Donna2.jpg" width="140" height="140">
-          <h2>Donna</h2>
-          <p> Choosing the right fuel for the right job is always important. Whether you're overcooking last years freezer-burned deer venison or powering a generator in your remote greenhouse, we've got you covered. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        
-        <div class="col-md-2">
-          <img class="img-circle" src="/img/Booda_Sack.png" width="140" height="140">
-          <h2>Roger Sack</h2>
-          <p> You have propane. We have accessories. Camping? RVing? Does a friend need to hold your beer for this one? </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
+    
 
     <!-- FOOTER -->
       <footer>
