@@ -8,7 +8,7 @@ require 'db_connect.php';
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 
-$droptable = 'DROP TABLE IF EXISTS national_parks';
+$droptable = 'DROP TABLE IF EXISTS propane_and_accessories';
 $dbc->exec($droptable);
 
 $createtable = 'CREATE TABLE propane_and_accessories(
@@ -19,6 +19,7 @@ $createtable = 'CREATE TABLE propane_and_accessories(
 				type VARCHAR(100) NOT NULL,
 				price FLOAT(8,2) UNSIGNED NOT NULL,
 				description VARCHAR(450) NOT NULL,
+				image VARCHAR(200),
 				PRIMARY KEY(id)
 				)';
 $dbc->exec($createtable);

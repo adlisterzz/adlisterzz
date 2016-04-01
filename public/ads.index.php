@@ -1,5 +1,38 @@
 <?php
 
+DEFINE('DB_PASS', 'codeup1');
+DEFINE('DB_USER', 'codeup1');
+DEFINE('DB_NAME', 'dbname=ad');
+DEFINE('DB_HOST', 'mysql:host=127.0.0.1;');
+
+require '../database/db_connect.php';
+
+function pageController()
+{
+
+require '../database/db_connect.php';
+
+$query = "SELECT * FROM propane_and_accessories" ;
+$statement = $dbc->prepare($query);
+$statement->execute();
+
+
+$propanes = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+return array(
+  'propanes' => $propanes
+  
+  );
+
+
+
+
+
+
+}
+
+extract(pageController());
+
 ?>
 
 
@@ -25,7 +58,7 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
+    <link href="/css/jumbotron.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -77,21 +110,27 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
+        <?php foreach ($propanes as $propane): ?>
         <div class="col-md-4">
-          <h2>Propane1</h2>
-          <p>Brief Description! </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2><?php echo $propane ['name']?></h2> 
+          <p><?php echo 'Description - ' . ''. $propane ['description'] ?></p> 
+          <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>" height="120" width="120">
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> 
         </div>
-        <div class="col-md-4">
+        <?php endforeach; ?>
+
+        <!-- <div class="col-md-4">
           <h2>Propane2</h2>
           <p>Brief Description!  </p>
+          <img src="../img/blueRhino_Propane.jpeg" alt="BlueRhino" height="120" width="120">
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Propane3</h2>
           <p>Brief Description! </p>
+          <img src="../img/bernzomatic_Propane.jpeg" alt="Bernzomatic" height="120" width="120">
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+        </div> -->
       </div>
 
       <hr>

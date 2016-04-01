@@ -9,13 +9,13 @@ require 'db_connect.php';
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 
-$deleteRecords = 'TRUNCATE national_parks';
+$deleteRecords = 'TRUNCATE propane_and_accessories';
 $dbc->exec($deleteRecords);
 
 
 $propanes = array(
 
-	array('name'=> 'Testname', 'make'=> 'Testmake', 'grade'=> 'Testgrade', 'type'=> 'Testtype', 'price'=> 1000, 'description'=> 'Some description')
+	array('name'=> 'Testname', 'maker'=> 'Testmake', 'grade'=> 'Testgrade', 'type'=> 'Testtype', 'price'=> 1000, 'description'=> 'Some description', 'image'=> '/img/Coleman_Propane.jpeg')
 
 
 
@@ -23,18 +23,19 @@ $propanes = array(
 
 foreach ($propanes as $propane) {
 
-		$query = "INSERT INTO propane_and_accessories (name, make, grade, type, price, description)
-			   VALUES (:name, :make, :grade, :type, :price, :description)";
+		$query = "INSERT INTO propane_and_accessories (name, maker, grade, type, price, description, image)
+			   VALUES (:name, :maker, :grade, :type, :price, :description, :image)";
 
 
 
 $statement = $dbc->prepare($query);
 $statement->bindValue(':name', $propane['name'], PDO::PARAM_STR);
-$statement->bindValue(':make', $propane['make'], PDO::PARAM_STR);
-$statement->bindValue(':grade', $propane['garde'], PDO::PARAM_STR);
+$statement->bindValue(':maker', $propane['maker'], PDO::PARAM_STR);
+$statement->bindValue(':grade', $propane['grade'], PDO::PARAM_STR);
 $statement->bindValue(':type', $propane['type'], PDO::PARAM_STR);
 $statement->bindValue(':price', $propane['price'], PDO::PARAM_STR);
 $statement->bindValue(':description', $propane['description'], PDO::PARAM_STR);
+$statement->bindValue(':image', $propane['image'], PDO::PARAM_STR);
 			   		  
 
 
