@@ -113,9 +113,10 @@ extract(pageController());
         <?php foreach ($propanes as $propane): ?>
         <div class="col-md-4">
           <h2><?php echo $propane ['name']?></h2> 
-          <p><?php echo 'Description - ' . ''. $propane ['description'] ?></p> 
           <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>" height="120" width="120">
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> 
+          <hr>
+          <p><?php echo 'Description - ' . ''. $propane ['description'] ?></p> 
+          <p><a class="btn btn-default" href="ads.show.php?id= <?php echo $propane ['id']?>" role="button">View details &raquo;</a></p> 
         </div>
         <?php endforeach; ?>
 
@@ -136,9 +137,11 @@ extract(pageController());
       <hr>
 
       <footer>
-        <?php include_once '../views/footer.php';?>
+      <p>&copy; 2015 Company, Inc.</p>
       </footer>
     </div> <!-- /container -->
+
+
 
 
     <!-- Bootstrap core JavaScript

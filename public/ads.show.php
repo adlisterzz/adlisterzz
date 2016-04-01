@@ -1,8 +1,36 @@
 <?php
 
+DEFINE('DB_PASS', 'codeup1');
+DEFINE('DB_USER', 'codeup1');
+DEFINE('DB_NAME', 'dbname=ad');
+DEFINE('DB_HOST', 'mysql:host=127.0.0.1;');
 
 
+require '../utils/Input.php';
 
+function pageController()
+{
+
+require '../database/db_connect.php';
+
+$id = Input::get('id');
+$query = "SELECT * FROM propane_and_accessories WHERE id = :id" ;
+$statement = $dbc->prepare($query);
+$statement->bindValue(':id', $id, PDO::PARAM_INT);
+$statement->execute();
+$propane = $statement->fetch();
+
+
+// $propanes = $statement->fetch(PDO::FETCH_ASSOC);
+
+return array(
+  'propane' => $propane
+  
+  );
+
+}
+
+extract(pageController());
 
 ?>
 
@@ -55,7 +83,7 @@
       </div>
 
       <div class="jumbotron">
-         <img src="../img/Coleman_Propane.jpeg" alt="ColemanPropane">     
+          <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>">     
       </div>
 
       <div class="row marketing">
@@ -81,6 +109,7 @@
           <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
       </div>
+      <p><a class="btn btn-default" href="ads.index.php" role="button">Go Back to Listings! &raquo;</a></p>
 
       <footer class="footer">
         <p>&copy; 2015 Company, Inc.</p>

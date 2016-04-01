@@ -6,25 +6,38 @@ require_once __DIR__ . '/Model.php';
 
 class User extends Model
 {
+    protected static $table = 'users';
+    protected $columns = [
+        'id',
+        'first_name',
+        'last_name',
+        'email',
+        'password',
+    ];
     /** Insert a new entry into the database */
     protected function insert()
     {
-        // @TODO: Use prepared statements to ensure data security
-
-        // @TODO: You will need to iterate through all the attributes to build the prepared query
-
-        // @TODO: After the insert, add the id back to the attributes array
-        //        so the object properly represents a DB record
+        $insert = 'INSERT INTO users (first_name, last_name, email, password)
+                   VALUES (:first_name, :last_name, :email, :password)';
+        $statement = self::$dbc->prepare($insert);
+        unset($this->attributes['id']);
+        foreach ($this->attributes as $key => $value) {
+            $statement->bindValue(":$key", $value, PDO::PARAM_STR);
+        }
+        $statement->execute();
+        $this->attributes['id'] = self::$dbc->lastInsertId();
     }
-
     /** Update existing entry in the database */
     protected function update()
     {
-        // @TODO: Use prepared statements to ensure data security
-
-        // @TODO: You will need to iterate through all the attributes to build the prepared query
+        $update = 'UPDATE users SET first_name = :first_name, last_name = :last_name,
+                   email = :email, password = :password WHERE id = :id';
+        $statement = self::$dbc->prepare($update);
+        foreach ($this->attributes as $key => $value) {
+            $statement->bindValue(":$key", $value, PDO::PARAM_STR);
+        }
+        $statement->execute();
     }
-
     /**
      * Find a single record in the DB based on its id
      *
@@ -36,19 +49,17 @@ class User extends Model
     {
         // Get connection to the database
         self::dbConnect();
-
-        // @TODO: Create select statement using prepared statements
-
-        // @TODO: Store the result in a variable named $result
-
+        $statement = self::$dbc->prepare('SELECT * FROM users WHERE id = :id');
+        $statement->bindValue(':id', $id, PDO::PARAM_INT);
+        $statement->execute();
+        $result = $statement->fetch();
         // The following code will set the attributes on the calling object based on the result variable's contents
         $instance = null;
         if ($result) {
-            $instance = new static($result);
+            $instance = new User($result);
         }
         return $instance;
     }
-
     /**
      * Find all records in a table
      *
@@ -57,7 +68,21 @@ class User extends Model
     public static function all()
     {
         self::dbConnect();
-
-        // @TODO: Learning from the find method, return all the matching records
+        $statement = self::$dbc->prepare('SELECT * FROM users');
+        $statement->execute();
+        $results = $statement->fetchAll();
+        $users = [];
+        foreach ($results as $row) {
+            $users[] = new User($row);
+        }
+        return $users;
+    }
+    public static function delete($id)
+    {
+        // Get connection to the database
+        self::dbConnect();
+        $statement = self::$dbc->prepare('DELETE FROM users WHERE id = :id');
+        $statement->bindValue(':id', $id, PDO::PARAM_INT);
+        $statement->execute();
     }
 }

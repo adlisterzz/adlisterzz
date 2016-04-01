@@ -15,9 +15,11 @@ $dbc->exec($deleteRecords);
 
 $propanes = array(
 
-	array('name'=> 'Testname', 'maker'=> 'Testmake', 'grade'=> 'Testgrade', 'type'=> 'Testtype', 'price'=> 1000, 'description'=> 'Some description', 'image'=> '/img/Coleman_Propane.jpeg')
+	array('name'=> 'Coleman', 'maker'=> 'Coleman', 'grade'=> 'HD5', 'type'=> 'liquid', 'price'=> 1000, 'description'=> 'Pre-filled propane cylinders with quality steel construction, a stable base and reliable valves provide safe and easy-to-use operation. Cylinders are a universal size and fit all standard portable propane appliances, tabletop grills and propane torches.', 'image'=> '/img/Coleman_Propane.jpeg'),
 
+	array('name'=> 'BlueRhino', 'maker'=> 'Various', 'grade'=> 'HD5 and HD2', 'type'=> 'vapor and liquid', 'price'=> 1500, 'description'=> 'When you need propane, bring your empty propane tank and exchange for a full tank.', 'image'=> '/img/blueRhino_Propane.jpeg'),
 
+	array('name'=> 'Bernzomatic', 'maker'=> 'Bernzomatic', 'grade'=> 'HD5 and HD2', 'type'=> 'vapor and liquid', 'price'=> 1000, 'description'=> "There''s a fire in each of us. Waiting to ignite. We believe in empowering those who''ve found their flame and dare to follow it. Because the ones who do, create bold transformations within themselves and in their environments.", 'image'=> '/img/bernzomatic_propane.jpeg')
 
 	);
 
