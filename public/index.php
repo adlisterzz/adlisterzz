@@ -160,7 +160,7 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-lg-5">
-          <img class="featurette-image img-responsive center-block" src="/img/PropaneFlame.jpeg" alt="Hot!">
+          <img class="featurette-image img-responsive center-block img-rounded" src="/img/PropaneFlame.jpeg" alt="Hot!">
         </div>
       </div>
 
@@ -172,7 +172,7 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="/img/PropaneLife.jpeg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block img-rounded" src="/img/PropaneLife.jpeg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -184,7 +184,7 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="/img/stricklandShirt.jpeg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block img-rounded" src="/img/stricklandShirt.jpeg" alt="Generic placeholder image">
         </div>
       </div>
 

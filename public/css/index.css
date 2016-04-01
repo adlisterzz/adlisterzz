@@ -1,0 +1,16 @@
+.margin100{
+	margin-top: 100px;
+}
+
+.stricklandPic{
+	background-image: url(/img/Strickland_Propane.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	background-size: 100% 300px;
+}
+
+.jumbotron{
+	height: 300px;
+	width: 100%;
+}
