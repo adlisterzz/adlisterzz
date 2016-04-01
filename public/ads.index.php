@@ -112,9 +112,9 @@ extract(pageController());
       <div class="row">
         <?php foreach ($propanes as $propane): ?>
         <div class="col-md-4">
-          <h2><?php $propane ['name']?></h2> 
-          <p><?php 'Description - ' . ''. $propane ['description'] ?></p> 
-          <img src="<?php $propane ['image'] ?>"alt="<?php $propane['name']?>" height="120" width="120">
+          <h2><?php echo $propane ['name']?></h2> 
+          <p><?php echo 'Description - ' . ''. $propane ['description'] ?></p> 
+          <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>" height="120" width="120">
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> 
         </div>
         <?php endforeach; ?>

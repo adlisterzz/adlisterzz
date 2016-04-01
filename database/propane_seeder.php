@@ -15,7 +15,7 @@ $dbc->exec($deleteRecords);
 
 $propanes = array(
 
-	array('name'=> 'Testname', 'maker'=> 'Testmake', 'grade'=> 'Testgrade', 'type'=> 'Testtype', 'price'=> 1000, 'description'=> 'Some description', 'image'=> '../public/img/Coleman_Propane.jpeg')
+	array('name'=> 'Testname', 'maker'=> 'Testmake', 'grade'=> 'Testgrade', 'type'=> 'Testtype', 'price'=> 1000, 'description'=> 'Some description', 'image'=> '/img/Coleman_Propane.jpeg')
 
 
 
