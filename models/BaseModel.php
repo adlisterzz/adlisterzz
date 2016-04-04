@@ -79,7 +79,7 @@ abstract class Model
         
     }
     /** Store the object in the database */
-        public function save()
+    public function save()
     {
         if(empty($this->attributes)){
             return;

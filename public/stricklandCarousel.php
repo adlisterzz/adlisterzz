@@ -14,7 +14,7 @@
             <div class="carousel-caption">
               <h1>Wanna get in on the action?</h1>
               <p> Is buying and selling propane and propane accessories your thing? Whether you're heating your mobile home or Grand Pappy's old still, we've got you covered!</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today!!</a></p>
+              <p><a class="btn btn-lg btn-primary" href="users.create.php" role="button">Sign up today!!</a></p>
             </div>
           </div>
         </div>

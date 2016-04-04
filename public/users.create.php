@@ -5,6 +5,7 @@ require_once '../utils/Input.php';
 require_once '../models/BaseModel.php';
 
 
+
 if (Input::get('Password') === Input::get('Password2')) {
     $user = new User([
 
@@ -62,7 +63,7 @@ if (Input::get('Password') === Input::get('Password2')) {
 
     <div class="container">
 
-      <form class="form-signin">
+      <form class="form-signin" method="post">
         <h2 class="form-signin-heading">Create a new User</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input name="Email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>

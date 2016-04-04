@@ -59,6 +59,20 @@ $createtable = 'CREATE TABLE users(
 
 $dbc->exec($createtable);
 
+
+$droptable = 'DROP TABLE IF EXISTS gift_shop';
+$dbc->exec($droptable);
+
+$createtable = 'CREATE TABLE gift_shop(
+				 id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				 name VARCHAR(200) NOT NULL,
+				 type VARCHAR(200) NOT NULL,
+				 price FLOAT(8,2) NOT NULL,
+				 describtion VARCHAR(450) NOT NULL,
+				 image VARCHAR(200),
+				 PRIMARY KEY(id)
+				 )';
+$dbc->exec($createtable);				 
 ?>
 
 

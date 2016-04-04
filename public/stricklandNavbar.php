@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-left" href="http://www.ad-lister.dev"><img src="/img/strickland4.jpeg"></a>
+      <a class="navbar-left" href="index.php"><img src="/img/strickland4.jpeg"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,13 +27,13 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to a section <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">Buy/Sell</li>
-            <li><a href="#">Propane</a></li>
+            <li><a href="ads.index.php">Propane</a></li>
             <li><a href="#">Propane Accessories</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Site</li>
             <li><a href="#">Strickland Gift Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
             <li><a href="#">Check out the Propaniacs</a></li>
           </ul>
         </li>
@@ -80,7 +80,7 @@
                                  </form>
                             </div>
                             <div class="bottom text-center">
-                                New here ? <a href="#"><b>Join Us</b></a>
+                                New here ? <a href="users.create.php"><b>Join Us</b></a>
                             </div>
                      </div>
                 </li>
