@@ -1,5 +1,17 @@
 <?php
 
+require_once '../models/User.php';
+require_once '..utils/Input.php';
+
+$user = new User([
+
+    'email' => Input::get('Email'),
+    'username' => Input::get('Username'),
+    'password' => password_hash(Input::get('Password'), PASSWORD_DEFAULT); 
+
+    ])
+
+$user->save();
 
 ?>
 
@@ -45,13 +57,13 @@
       <form class="form-signin">
         <h2 class="form-signin-heading">Create a new User</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input name="Email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputUsername" class="sr-only">Username</label>
-        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+        <input name="Username" type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <label for="inputPassword2" class="sr-only">Re-Enter Password</label>
-        <input type="password" id="inputPassword2" class="form-control" placeholder="Re-Enter Password" required>
+        <input name="Password" type="password" id="inputPassword2" class="form-control" placeholder="Re-Enter Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
       </form>
 
