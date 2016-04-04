@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+require_once '../utils/Input.php';
+require_once '../utils/Auth.php';
+
 
 ?>
 
@@ -35,6 +39,7 @@
 
 
 
+
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -47,7 +52,7 @@
           <img class="img-circle" src="/img/propaneBlueFlameCircle.jpg" width="140" height="140">
           <h2>Propane</h2>
           <p> Choosing the right fuel for the right job is always important. Whether you're overcooking last years freezer-burned deer venison or powering a generator in your remote greenhouse, we've got you covered. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="ads.index.php" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="/img/PropaneAccessories.jpeg" width="140" height="140">
