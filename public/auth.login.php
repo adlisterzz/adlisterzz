@@ -1,5 +1,21 @@
 <?php
+require_once '../utils/Input.php';
+require_once '../utils/Auth.php';
 
+var_dump($_POST);
+
+session_start();
+
+$username = Input::get('username');
+$password = Input::get('password');
+
+Auth::attempt($username, $password);
+
+if (Auth::check() == true)
+{
+    header("Location: //adlister.dev/public/index.php");
+    die();
+}
 
 ?>
 
@@ -44,8 +60,8 @@
 
       <form class="form-signin">
         <h2 class="form-signin-heading">Please sign in or Create a new User</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox">

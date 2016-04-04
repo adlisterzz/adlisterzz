@@ -2,23 +2,24 @@
 
 // __DIR__ is a *magic constant* with the directory path containing this file.
 // This allows us to correctly require_once Model.php, no matter where this file is being required from.
-require_once __DIR__ . '/Model.php';
+require_once __DIR__ . '/BaseModel.php';
 
 class User extends Model
 {
     protected static $table = 'users';
     protected $columns = [
         'id',
-        'first_name',
-        'last_name',
+        'firstname',
+        'lastname',
+        'username',
         'email',
         'password',
     ];
     /** Insert a new entry into the database */
     protected function insert()
     {
-        $insert = 'INSERT INTO users (first_name, last_name, email, password)
-                   VALUES (:first_name, :last_name, :email, :password)';
+        $insert = 'INSERT INTO users (firstname, lastname, email, password, username)
+                   VALUES (:firstname, :lastname, :email, :password, :username)';
         $statement = self::$dbc->prepare($insert);
         unset($this->attributes['id']);
         foreach ($this->attributes as $key => $value) {
@@ -30,8 +31,8 @@ class User extends Model
     /** Update existing entry in the database */
     protected function update()
     {
-        $update = 'UPDATE users SET first_name = :first_name, last_name = :last_name,
-                   email = :email, password = :password WHERE id = :id';
+        $update = 'UPDATE users SET firstname = :firstname, lastname = :lastname,
+                   email = :email, password = :password, username = :usdername WHERE id = :id';
         $statement = self::$dbc->prepare($update);
         foreach ($this->attributes as $key => $value) {
             $statement->bindValue(":$key", $value, PDO::PARAM_STR);

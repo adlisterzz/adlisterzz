@@ -30,7 +30,7 @@ abstract class Model
     protected static function dbConnect()
     {
         if (!self::$dbc) {
-            $dbc = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME,DB_USER,PASSWORD);
+            $dbc = new PDO('mysql:host=127.0.0.1;' . DB_HOST . ';dbname=ad' . DB_NAME,DB_USER,PASSWORD);
             self::$dbc = $dbc;
            
             // @TODO: Connect to database
@@ -38,7 +38,7 @@ abstract class Model
     }
     public static function all(){
         self::dbConnect();
-        $stmt = self::$dbc->prepare('SELECT * FROM user');
+        $stmt = self::$dbc->prepare('SELECT * FROM users');
         $stmt->execute();
         $resultsAll = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $resultsAll;
