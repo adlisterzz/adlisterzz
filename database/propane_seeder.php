@@ -9,7 +9,7 @@ require 'db_connect.php';
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 
-$deleteRecords = 'TRUNCATE propane_and_accessories';
+$deleteRecords = 'TRUNCATE propane';
 $dbc->exec($deleteRecords);
 
 
@@ -19,13 +19,17 @@ $propanes = array(
 
 	array('name'=> 'BlueRhino', 'maker'=> 'Various', 'grade'=> 'HD5 and HD2', 'type'=> 'vapor and liquid', 'price'=> 1500, 'description'=> 'When you need propane, bring your empty propane tank and exchange for a full tank.', 'image'=> '/img/blueRhino_Propane.jpeg'),
 
-	array('name'=> 'Bernzomatic', 'maker'=> 'Bernzomatic', 'grade'=> 'HD5 and HD2', 'type'=> 'vapor and liquid', 'price'=> 1000, 'description'=> "There''s a fire in each of us. Waiting to ignite. We believe in empowering those who''ve found their flame and dare to follow it. Because the ones who do, create bold transformations within themselves and in their environments.", 'image'=> '/img/bernzomatic_propane.jpeg')
+	array('name'=> 'Bernzomatic', 'maker'=> 'Bernzomatic', 'grade'=> 'HD5 and HD2', 'type'=> 'vapor and liquid', 'price'=> 1000, 'description'=> "There''s a fire in each of us. Waiting to ignite. We believe in empowering those who''ve found their flame and dare to follow it. Because the ones who do, create bold transformations within themselves and in their environments.", 'image'=> '/img/bernzomatic_Propane.jpeg'),
+
+	array('name'=> 'Calor', 'maker'=> 'Calor', 'grade'=> 'HD5 and HD2', 'type'=> 'vapor', 'price'=> 650, 'description'=> "Put some Calor in your life! We're english mate so you can trust us. Fancy that?", 'image'=> '/img/Calor_Propane.jpeg'),
+
+	array('name'=> 'Worthington', 'maker'=> 'Worthington', 'grade'=> 'HD5 and HD2', 'type'=> 'vapor', 'price'=> 900, 'description'=> "No matter where you live, heat and system power are likely part of your daily life. Our propane heating and system tanks are quiet, reliable sources of heat and power for products like commercial patio heaters, gas logs and pool heaters.", 'image'=> '/img/Worthington_Propane.jpeg')
 
 	);
 
 foreach ($propanes as $propane) {
 
-		$query = "INSERT INTO propane_and_accessories (name, maker, grade, type, price, description, image)
+		$query = "INSERT INTO propane (name, maker, grade, type, price, description, image)
 			   VALUES (:name, :maker, :grade, :type, :price, :description, :image)";
 
 

@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+require_once '../utils/Input.php';
+require_once '../utils/Auth.php';
+
 
 ?>
 
@@ -50,7 +54,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jump to a section!<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Propane</a></li>
+                    <li><a href="ads.index.php">Propane</a></li>
                     <li><a href="#">Propane Bottles</a></li>
                     <li><a href="#">Propane Regulators</a></li>
                     <li><a href="#">Propane Hoses</a></li>
@@ -139,7 +143,7 @@
           <img class="img-circle" src="/img/propaneBlueFlameCircle.jpg" width="140" height="140">
           <h2>Propane</h2>
           <p> Choosing the right fuel for the right job is always important. Whether you're overcooking last years freezer-burned deer venison or powering a generator in your remote greenhouse, we've got you covered. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="ads.index.php" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="/img/PropaneAccessories.jpeg" width="140" height="140">

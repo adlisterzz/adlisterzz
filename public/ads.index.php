@@ -12,7 +12,7 @@ function pageController()
 
 require '../database/db_connect.php';
 
-$query = "SELECT * FROM propane_and_accessories" ;
+$query = "SELECT * FROM propane" ;
 $statement = $dbc->prepare($query);
 $statement->execute();
 
@@ -82,7 +82,7 @@ extract(pageController());
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Propane and Propane Accessories</a>
+          <a class="navbar-brand" href="index.php">Home</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">

@@ -11,6 +11,7 @@ class Log
 	{
 		$date = date("y-m-d");
     	$time = date("h:i:s");
+    	$prefix = 'log.';
 		$this->filename = __DIR__ . '/public/logs/' . $prefix .  $date . '.log';
 	}
 
