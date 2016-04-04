@@ -14,7 +14,7 @@ function pageController()
 require '../database/db_connect.php';
 
 $id = Input::get('id');
-$query = "SELECT * FROM propane_and_accessories WHERE id = :id" ;
+$query = "SELECT * FROM propane WHERE id = :id" ;
 $statement = $dbc->prepare($query);
 $statement->bindValue(':id', $id, PDO::PARAM_INT);
 $statement->execute();

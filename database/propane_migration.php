@@ -51,10 +51,9 @@ $createtable = 'CREATE TABLE users(
 				 lastname VARCHAR(75) NOT NULL,
 				 email VARCHAR(30) NOT NULL,
 				 username VARCHAR(20) NOT NULL,
-				 password VARCHAR(15) NOT NULL,
+				 password VARCHAR(120) NOT NULL,
 				 PRIMARY KEY(id),
 				 UNIQUE (username),
-				 UNIQUE (password),
 				 UNIQUE (email)
 				 )';
 

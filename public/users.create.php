@@ -1,18 +1,26 @@
 <?php
 
 require_once '../models/User.php';
-require_once '..utils/Input.php';
+require_once '../utils/Input.php';
+require_once '../models/BaseModel.php';
 
-$user = new User([
 
-    'email' => Input::get('Email'),
-    'username' => Input::get('Username'),
-    'password' => password_hash(Input::get('Password'), PASSWORD_DEFAULT); 
+if (Input::get('Password') === Input::get('Password2')) {
+    $user = new User([
 
-    ])
+        'email' => Input::get('Email'),
+        'firstname' => Input::get('Firstname'),
+        'lastname' => Input::get('Lastname'),
+        'username' => Input::get('Username'),
+        'password' => password_hash(Input::get('Password'), PASSWORD_DEFAULT)
 
-$user->save();
+        ]);
 
+    $user->save();
+} else {
+    echo '<script language="javascript">alert ("Your passwords do not match!");</script>';
+    echo '<script type="text/javascript">window.history.go(-1);</script>';
+    }
 ?>
 
 
@@ -58,10 +66,14 @@ $user->save();
         <h2 class="form-signin-heading">Create a new User</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input name="Email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputFirstname" class="sr-only">First Name</label>
+        <input name="Firstname" type="text" id="inputFirstname" class="form-control" placeholder="First Name" required autofocus>
+         <label for="inputLasttname" class="sr-only">Last Name</label>
+        <input name="Lastname" type="text" id="inputLastname" class="form-control" placeholder="Last Name" required autofocus>
         <label for="inputUsername" class="sr-only">Username</label>
         <input name="Username" type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input name="Password2"type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <label for="inputPassword2" class="sr-only">Re-Enter Password</label>
         <input name="Password" type="password" id="inputPassword2" class="form-control" placeholder="Re-Enter Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
