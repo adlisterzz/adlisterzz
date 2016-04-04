@@ -9,7 +9,7 @@ require 'db_connect.php';
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 
-$deleteRecords = 'TRUNCATE propane_and_accessories';
+$deleteRecords = 'TRUNCATE propane';
 $dbc->exec($deleteRecords);
 
 
@@ -29,7 +29,7 @@ $propanes = array(
 
 foreach ($propanes as $propane) {
 
-		$query = "INSERT INTO propane_and_accessories (name, maker, grade, type, price, description, image)
+		$query = "INSERT INTO propane (name, maker, grade, type, price, description, image)
 			   VALUES (:name, :maker, :grade, :type, :price, :description, :image)";
 
 

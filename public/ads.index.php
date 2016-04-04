@@ -12,7 +12,7 @@ function pageController()
 
 require '../database/db_connect.php';
 
-$query = "SELECT * FROM propane_and_accessories" ;
+$query = "SELECT * FROM propane" ;
 $statement = $dbc->prepare($query);
 $statement->execute();
 
