@@ -1,5 +1,10 @@
 <?php
 
+DEFINE('DB_PASS', 'codeup1');
+DEFINE('DB_USER', 'codeup1');
+DEFINE('DB_NAME', 'ad');
+DEFINE('DB_HOST', '127.0.0.1');
+
 //abstract = write your methods (only!) on a child class
 abstract class Model
 {
@@ -30,7 +35,7 @@ abstract class Model
     protected static function dbConnect()
     {
         if (!self::$dbc) {
-            $dbc = new PDO('mysql:host=127.0.0.1;' . DB_HOST . ';dbname=ad' . DB_NAME,DB_USER,PASSWORD);
+            $dbc = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME,DB_USER,DB_PASS);
             self::$dbc = $dbc;
            
             // @TODO: Connect to database
@@ -74,11 +79,12 @@ abstract class Model
         
     }
     /** Store the object in the database */
-        public function save()
+    public function save()
     {
         if(empty($this->attributes)){
             return;
         }
+        
         //alternative if(array_key_exists('id',$this->attributes))
         if(isset($this->attributes['id'])){
             $this->update();
