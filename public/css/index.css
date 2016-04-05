@@ -7,10 +7,17 @@
 	width: 450px;
 	border-radius: 10px;
 }
+.centeredMediaButtons{ 
+	width: 188px; 
+	float: none;
+}
+.addPadding{
+	margin-top: 4px;
+	padding-right: 18px;
+}
 
-.centered{
-	margin-left: auto;
-	margin-right: auto;
+#forcedInputSize{
+	width: 250px;
 }
 
 .impactText {
