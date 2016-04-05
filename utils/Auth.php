@@ -1,6 +1,7 @@
 <?php
 require_once 'Log.php';
 require_once 'Input.php';
+require_once '../models/User.php'
 
 // $log = new Log("password");
 
@@ -10,7 +11,7 @@ class Auth
 {
 	
 	
-	public static $password = '$2y$10$SLjwBwdOVvnMgWxvTI4Gb.YVcmDlPTpQystHMO2Kfyi/DS8rgA0Fm';
+	// public static $password = '$2y$10$SLjwBwdOVvnMgWxvTI4Gb.YVcmDlPTpQystHMO2Kfyi/DS8rgA0Fm';
 
 
 	public static function attempt($username, $password)
