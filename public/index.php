@@ -35,6 +35,7 @@ require_once '../utils/Auth.php';
     
     <?php include_once 'stricklandNavbar.php'; ?>
     <?php include_once 'stricklandCarousel.php'; ?>
+    <?php include_once 'stricklandFooter.php'; ?>
 
 
 
@@ -102,15 +103,7 @@ require_once '../utils/Auth.php';
 
       <hr class="featurette-divider">
 
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-     
- 
-
     </div><!-- /.container -->
-     <?php include_once 'stricklandFooter.php'; ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
