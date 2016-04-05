@@ -109,32 +109,20 @@ extract(pageController());
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
-        <?php foreach ($accessories as $accessorie): ?>
-        <div class="col-md-4">
+      
+        <?php foreach (array_chunk($accessories, 3) as $three_accessorie): ?>
+        <div class="row">    
+        <?php foreach ($three_accessorie as $accessorie):?>
+        <div class="col-md-4" id="paddingForListings">
           <h2><?php echo $accessorie ['type']?></h2> 
-          <img src="<?php echo $accessorie ['image'] ?>"alt="<?php echo $accessorie['type']?>" height="120" width="120">
+          <img src="<?php echo $accessorie ['image'] ?>"alt="<?php echo $accessorie['type']?>" height="120" width="120" >
           <hr>
           <p><?php echo 'Description - ' . ''. $accessorie ['description'] ?></p> 
           <p><a class="btn btn-default" href="accessories.show.php?id= <?php echo $accessorie ['id']?>" role="button">View details &raquo;</a></p> 
         </div>
         <?php endforeach; ?>
-
-        <!-- <div class="col-md-4">
-          <h2>Propane2</h2>
-          <p>Brief Description!  </p>
-          <img src="../img/blueRhino_Propane.jpeg" alt="BlueRhino" height="120" width="120">
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Propane3</h2>
-          <p>Brief Description! </p>
-          <img src="../img/bernzomatic_Propane.jpeg" alt="Bernzomatic" height="120" width="120">
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div> -->
-      </div>
-
-      <hr>
+        </div>
+        <?php endforeach; ?>
 
       <footer>
       <p>&copy; 2015 Company, Inc.</p>

@@ -15,7 +15,27 @@ $dbc->exec($deleteRecords);
 
 $accessories = array(
 
-	array('category'=> 'Outdoor', 'type'=> 'Regulator', 'price'=> 500,  'description'=> 'Regulator for Propane Cylinder', 'image'=> '/img/propaneAccessory1.jpeg')
+	array('category'=> 'Outdoor', 'type'=> 'Regulator', 'price'=> 500,  'description'=> 'Regulator for Propane Cylinder', 'image'=> '/img/propaneAccessory1.jpeg'),
+
+	array('category'=> 'Outdoor', 'type'=> 'Regulator', 'price'=> 400,  'description'=> 'Regulator for Propane Cylinder', 'image'=> '/img/propaneAccessory11.jpeg'),
+
+	array('category'=> 'Outdoor and Indoor', 'type'=> 'Valve', 'price'=> 100,  'description'=> 'Valve for Propane Cylinder', 'image'=> '/img/propaneAccessory12.jpeg'),
+
+	array('category'=> 'Outdoor and Indoor', 'type'=> 'Cylinder Set', 'price'=> 950,  'description'=> 'Complete accessories set for Propane Cylinder', 'image'=> '/img/propaneAccessory14.jpeg'),
+
+	array('category'=> 'Outdoor', 'type'=> 'Heaters', 'price'=> 750,  'description'=> 'Selection of outdoor Propane Heaters', 'image'=> '/img/propaneAccessory15.jpeg'),
+
+	array('category'=> 'Outdoor', 'type'=> 'Pressure Regulator', 'price'=> 250,  'description'=> 'Pressure Regulator for Propane Cylinder', 'image'=> '/img/propaneAccessory2.jpeg'),
+
+	array('category'=> 'Outdoor', 'type'=> 'Regulator Set', 'price'=> 630,  'description'=> 'Regulator Set for Propane Cylinder', 'image'=> '/img/propaneAccessory3.jpeg'),
+
+	array('category'=> 'Outdoor and Indoor', 'type'=> 'Portable Heater', 'price'=> 450,  'description'=> 'Portable Propane Heaters', 'image'=> '/img/propaneAccessory5.jpeg'),
+
+	array('category'=> 'Outdoor and Indoor', 'type'=> 'Misc', 'price'=> 25,  'description'=> 'Misc Propne and Propane Accessories stuff', 'image'=> '/img/propaneAccessory6.jpeg'),
+
+	array('category'=> 'Outdoor', 'type'=> 'Grill', 'price'=> 720,  'description'=> 'Outdoor Propane Grill', 'image'=> '/img/propaneAccessory7.jpeg'),
+
+	array('category'=> 'Outdoor and Indoor', 'type'=> 'Tubes', 'price'=> 99,  'description'=> 'Supply Tubes', 'image'=> '/img/propaneAccessory8.jpeg')
 
 	
 
