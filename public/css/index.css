@@ -8,6 +8,11 @@
 	border-radius: 10px;
 }
 
+.centered{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .impactText {
 	font-family: "Arial Black", Gadget, sans-serif;
    -webkit-text-stroke: 2px black;
