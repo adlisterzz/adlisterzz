@@ -14,14 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
-    <!-- Social Media Links -->
       <ul class="nav navbar-nav social">
-        <ul class="nav navbar-nav navbar-left social">
-            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
-            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
-            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
-            <li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
-        </ul>
         
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to a section <span class="caret"></span></a>
