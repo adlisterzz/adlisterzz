@@ -28,12 +28,15 @@ require_once '../utils/Auth.php';
     <link href="/css/carousel.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/css/footer-distributed.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     
     <?php include_once 'stricklandNavbar.php'; ?>
     <?php include_once 'stricklandCarousel.php'; ?>
+
+
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -103,13 +106,11 @@ require_once '../utils/Auth.php';
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+     
+ 
 
     </div><!-- /.container -->
-
+     <?php include_once 'stricklandFooter.php'; ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
