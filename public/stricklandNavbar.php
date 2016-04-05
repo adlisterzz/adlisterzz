@@ -28,7 +28,7 @@
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">Buy/Sell</li>
             <li><a href="ads.index.php">Propane</a></li>
-            <li><a href="#">Propane Accessories</a></li>
+            <li><a href="accessories.index.php">Propane Accessories</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Site</li>
             <li><a href="#">Strickland Gift Shop</a></li>

@@ -31,7 +31,7 @@ $dbc->exec($droptable);
 
 $createtable = 'CREATE TABLE propane_and_accessories(
 				  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-				  name VARCHAR(200) NOT NULL,
+				  category VARCHAR(200) NOT NULL,
 				  type VARCHAR(200) NOT NULL,
 				  price FLOAT(8,2) NOT NULL,
 				  description VARCHAR(450) NOT NULL,

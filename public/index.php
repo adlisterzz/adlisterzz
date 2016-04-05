@@ -58,7 +58,7 @@ require_once '../utils/Auth.php';
           <img class="img-circle" src="/img/PropaneAccessories.jpeg" width="140" height="140">
           <h2>Propane Accessories</h2>
           <p> You have propane. We have accessories. Camping? RVing? Does a friend need to hold your beer for this one? </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="accessories.index.php" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
