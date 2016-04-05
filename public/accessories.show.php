@@ -14,17 +14,17 @@ function pageController()
 require '../database/db_connect.php';
 
 $id = Input::get('id');
-$query = "SELECT * FROM propane WHERE id = :id" ;
+$query = "SELECT * FROM propane_and_accessories WHERE id = :id" ;
 $statement = $dbc->prepare($query);
 $statement->bindValue(':id', $id, PDO::PARAM_INT);
 $statement->execute();
-$propane = $statement->fetch();
+$accessorie = $statement->fetch();
 
 
 // $propanes = $statement->fetch(PDO::FETCH_ASSOC);
 
 return array(
-  'propane' => $propane
+  'accessorie' => $accessorie
   
   );
 
@@ -83,7 +83,7 @@ extract(pageController());
       </div>
 
       <div class="jumbotron">
-          <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>">     
+          <img src="<?php echo $accessorie ['image'] ?>"alt="<?php echo $accessorie['type']?>">     
       </div>
 
       <div class="row marketing">
@@ -109,7 +109,7 @@ extract(pageController());
           <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
       </div>
-      <p><a class="btn btn-default" href="ads.index.php" role="button">Go Back to Listings! &raquo;</a></p>
+      <p><a class="btn btn-default" href="accessories.index.php" role="button">Go Back to Listings! &raquo;</a></p>
 
       <footer class="footer">
         <p>&copy; 2015 Company, Inc.</p>

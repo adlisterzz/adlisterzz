@@ -31,7 +31,7 @@ $dbc->exec($droptable);
 
 $createtable = 'CREATE TABLE propane_and_accessories(
 				  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-				  name VARCHAR(200) NOT NULL,
+				  category VARCHAR(200) NOT NULL,
 				  type VARCHAR(200) NOT NULL,
 				  price FLOAT(8,2) NOT NULL,
 				  description VARCHAR(450) NOT NULL,
@@ -51,15 +51,28 @@ $createtable = 'CREATE TABLE users(
 				 lastname VARCHAR(75) NOT NULL,
 				 email VARCHAR(30) NOT NULL,
 				 username VARCHAR(20) NOT NULL,
-				 password VARCHAR(15) NOT NULL,
+				 password VARCHAR(120) NOT NULL,
 				 PRIMARY KEY(id),
 				 UNIQUE (username),
-				 UNIQUE (password),
 				 UNIQUE (email)
 				 )';
 
 $dbc->exec($createtable);
 
+
+$droptable = 'DROP TABLE IF EXISTS gift_shop';
+$dbc->exec($droptable);
+
+$createtable = 'CREATE TABLE gift_shop(
+				 id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				 name VARCHAR(200) NOT NULL,
+				 type VARCHAR(200) NOT NULL,
+				 price FLOAT(8,2) NOT NULL,
+				 describtion VARCHAR(450) NOT NULL,
+				 image VARCHAR(200),
+				 PRIMARY KEY(id)
+				 )';
+$dbc->exec($createtable);				 
 ?>
 
 

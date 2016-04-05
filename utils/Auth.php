@@ -1,5 +1,6 @@
 <?php
 require_once 'Log.php';
+require_once 'Input.php';
 
 // $log = new Log("password");
 
@@ -68,6 +69,8 @@ class Auth
     	
 
 	}
+
+	
 
 
 
