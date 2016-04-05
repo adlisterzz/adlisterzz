@@ -35,11 +35,6 @@ require_once '../utils/Auth.php';
     <?php include_once 'stricklandNavbar.php'; ?>
     <?php include_once 'stricklandCarousel.php'; ?>
 
-
-
-
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -47,14 +42,14 @@ require_once '../utils/Auth.php';
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="row text-center">
+        <div class="col-lg-6">
           <img class="img-circle" src="/img/propaneBlueFlameCircle.jpg" width="140" height="140">
           <h2>Propane</h2>
           <p> Choosing the right fuel for the right job is always important. Whether you're overcooking last years freezer-burned deer venison or powering a generator in your remote greenhouse, we've got you covered. </p>
           <p><a class="btn btn-default" href="ads.index.php" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <img class="img-circle" src="/img/PropaneAccessories.jpeg" width="140" height="140">
           <h2>Propane Accessories</h2>
           <p> You have propane. We have accessories. Camping? RVing? Does a friend need to hold your beer for this one? </p>
@@ -65,15 +60,16 @@ require_once '../utils/Auth.php';
 
       <!-- START THE FEATURETTES -->
 
+
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-lg-7">
-          <h2 class="featurette-heading">How to pick the right propane for the job.<span class="text-muted"> It'll blow your mind.</span></h2>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">How to pick the right propane for the job. <span class="text-muted"> It'll blow your mind.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
-        <div class="col-lg-5">
-          <img class="featurette-image img-responsive center-block img-rounded" src="/img/PropaneFlame.jpeg" alt="Hot!">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block featuretteImage" src="/img/PropaneFlame.jpeg" alt="Caliente!">
         </div>
       </div>
 
@@ -85,7 +81,7 @@ require_once '../utils/Auth.php';
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block img-rounded" src="/img/PropaneLife.jpeg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block featuretteImage" src="/img/PropaneLife.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -93,11 +89,11 @@ require_once '../utils/Auth.php';
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading"> Done acceossirizing your propane? Ready to accessorize your body? <span class="text-muted">Checkmate.</span></h2>
+          <h2 class="featurette-heading">Done acceossirizing your propane? Ready to accessorize your body? <span class="text-muted">It's lit fam</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block img-rounded" src="/img/stricklandShirt.jpeg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block featuretteImage" src="/img/stricklandShirt.jpeg" alt="Generic placeholder image">
         </div>
       </div>
 
