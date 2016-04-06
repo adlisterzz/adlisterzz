@@ -69,6 +69,7 @@ class User extends Model
         $statement->bindValue(':username', $username, PDO::PARAM_STR);
         $statement->execute();
         $result = $statement->fetch();
+        
 
         $instance = null;
         if ($result) {
