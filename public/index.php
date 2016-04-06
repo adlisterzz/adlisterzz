@@ -70,7 +70,7 @@ require_once '../utils/Auth.php';
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">How to pick the right propane for the job. <span class="text-muted"> It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead"> At Strickland, we know what lights your fire: Propane. And only the finest. That's why we hand select our propane only from USDA certified, free-range, GMO free, organic propane farms. </p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block featuretteImage" src="/img/PropaneFlame.jpeg" alt="Caliente!">
@@ -82,7 +82,7 @@ require_once '../utils/Auth.php';
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Which propane accesories fit my active adult lifestyle? <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead"> Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block featuretteImage" src="/img/PropaneLife.jpg" alt="Generic placeholder image">
@@ -93,8 +93,8 @@ require_once '../utils/Auth.php';
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Done acceossirizing your propane? Ready to accessorize your body? <span class="text-muted">It's lit fam</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Done acceossirizing your propane? Ready to accessorize your body? <span class="text-muted">It's lit fam.</span></h2>
+          <p class="lead"> Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block featuretteImage" src="/img/stricklandShirt.jpeg" alt="Generic placeholder image">
