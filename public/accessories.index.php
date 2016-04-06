@@ -1,37 +1,32 @@
 <?php
 
-DEFINE('DB_PASS', 'codeup1');
-DEFINE('DB_USER', 'codeup1');
-DEFINE('DB_NAME', 'dbname=ad');
-DEFINE('DB_HOST', 'mysql:host=127.0.0.1;');
+  DEFINE('DB_PASS', 'codeup1');
+  DEFINE('DB_USER', 'codeup1');
+  DEFINE('DB_NAME', 'dbname=ad');
+  DEFINE('DB_HOST', 'mysql:host=127.0.0.1;');
 
-require '../database/db_connect.php';
+  require '../database/db_connect.php';
 
-function pageController()
-{
+  function pageController()
+  {
 
-require '../database/db_connect.php';
+    require '../database/db_connect.php';
 
-$query = "SELECT * FROM propane_and_accessories" ;
-$statement = $dbc->prepare($query);
-$statement->execute();
-
-
-$accessories = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-return array(
-  'accessories' => $accessories
-  
-  );
+    $query = "SELECT * FROM propane_and_accessories" ;
+    $statement = $dbc->prepare($query);
+    $statement->execute();
 
 
+    $accessories = $statement->fetchAll(PDO::FETCH_ASSOC);
 
+    return array(
+      'accessories' => $accessories
+      
+      );
 
+  }
 
-
-}
-
-extract(pageController());
+  extract(pageController());
 
 ?>
 
@@ -51,15 +46,15 @@ extract(pageController());
     <title>Accessories Listing</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     
     <link href="css/carousel.css" rel="stylesheet" type="text/css">
-    <link href="css/index.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
     <link href="css/footer-distributed.css" rel="stylesheet" type="text/css" />
     <link href="css/jumbotron.css" rel="stylesheet">
+     <link href="css/index.css" rel="stylesheet" type="text/css">
     
     
   </head>
@@ -72,11 +67,11 @@ extract(pageController());
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center jumbotronColor">
+      <img src="/img/propaneTank.png" class="navbar-left">
+      <img src="/img/propaneTank.png" class="navbar-right">
       <div class="container">
-        <h1>Propane Accessories</h1>
-        <p>Something clever should go there probably......</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Sign In &raquo;</a></p>
+        <h1 class="impactText">Propane Accessories</h1>
       </div>
     </div>
 
@@ -112,14 +107,7 @@ extract(pageController());
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
   </body>
 </html>
