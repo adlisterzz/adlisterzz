@@ -26,7 +26,7 @@
             <li class="dropdown-header">Site</li>
             <li><a href="#">Strickland Gift Shop</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Tell Us Hwat</a></li>
             <li><a href="#">Check out the Propaniacs</a></li>
           </ul>
         </li>

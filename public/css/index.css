@@ -16,6 +16,13 @@
 	padding-right: 18px;
 }
 
+.adjustForSidebar{
+	padding-left: 200px;
+}
+
+.adjustJumbotron{
+
+}
 #forcedInputSize{
 	width: 250px;
 }
@@ -41,7 +48,10 @@
 
 .jumbotron{
 	height: 300px;
-	width: 100%;
+	/*width: 80%;
+	margin-left: 240px;*/
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 #login-dp{
