@@ -2,6 +2,7 @@
 require_once '../utils/Input.php';
 require_once '../models/PropaneModel.php';
 require_once '../utils/Auth.php';
+require_once '../models/User.php';
 
 session_start();
 
@@ -9,21 +10,30 @@ session_start();
 // 	header("Location: index.php");
 //     die();
 // }
+$error = "";
+if($_POST) {
 
-$propane = new Propane ([
+	$image = Input::uploadImage('image');
+	if ($image === false) {
 
-		'name'=> Input::get('name'),
-		'maker'=> Input::get('maker'),
-		'grade'=> Input::get('grade'),
-		'type'=> Input::get('type'),
-		'price'=> Input::get('price'),
-		'description'=> Input::get('description'),
-		'image'=> Input::uploadImage('image'),
-		'user_id'=>Auth::user()->id,
-		
-		]);
+		$error = "Image was not uploaded";
+	} else {
+			$propane = new Propane ([
 
-$propane->save();
+				'name'=> Input::get('name'),
+				'maker'=> Input::get('maker'),
+				'grade'=> Input::get('grade'),
+				'type'=> Input::get('type'),
+				'price'=> Input::get('price'),
+				'description'=> Input::get('description'),
+				'image'=> "/img/$image", 
+				'user_id'=>Auth::user()->id,
+				
+				]);
+			$propane->save();
+		}
+}
+
 
 	   
 
@@ -103,12 +113,12 @@ $propane->save();
     <label class="control-label col-sm-2" for="img">Image:</label>
     <div class="col-sm-10"> 
       <input name="image" type="file" name="fileToUpload" id="fileToUpload">
-      <input name="image" type="submit" value="Upload Image" name="submit">
     </div>
   </div>
   <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-default">Submit</button>
+      <?php echo $error ?>
     </div>
   </div>
 </form>
