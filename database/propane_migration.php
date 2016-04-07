@@ -8,8 +8,12 @@ require 'db_connect.php';
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 
-
-
+$droptable = 'DROP TABLE IF EXISTS gift_shop';
+$dbc->exec($droptable);
+$droptable = 'DROP TABLE IF EXISTS propane_and_accessories';
+$dbc->exec($droptable);
+$droptable = 'DROP TABLE IF EXISTS propane';
+$dbc->exec($droptable);
 $droptable = 'DROP TABLE IF EXISTS users';
 $dbc->exec($droptable);
 
@@ -29,13 +33,9 @@ $dbc->exec($createtable);
 
 
 
-$droptable = 'DROP TABLE IF EXISTS propane';
-$dbc->exec($droptable);
-
-
 $createtable = 'CREATE TABLE propane(
 				id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-				user_id INT UNSIGNED NOT NULL,
+				user_id INT UNSIGNED,
 				name VARCHAR(200) NOT NULL,
 				maker VARCHAR(200) NOT NULL,
 				grade VARCHAR(100) NOT NULL,
@@ -49,12 +49,10 @@ $createtable = 'CREATE TABLE propane(
 $dbc->exec($createtable);
 
 
-$droptable = 'DROP TABLE IF EXISTS propane_and_accessories';
-$dbc->exec($droptable);
 
 $createtable = 'CREATE TABLE propane_and_accessories(
 				  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-				  user_id INT UNSIGNED NOT NULL,
+				  user_id INT UNSIGNED,
 				  category VARCHAR(200) NOT NULL,
 				  type VARCHAR(200) NOT NULL,
 				  price FLOAT(8,2) NOT NULL,
@@ -67,9 +65,6 @@ $createtable = 'CREATE TABLE propane_and_accessories(
 $dbc->exec($createtable);
 
 
-
-$droptable = 'DROP TABLE IF EXISTS gift_shop';
-$dbc->exec($droptable);
 
 $createtable = 'CREATE TABLE gift_shop(
 				 id INT UNSIGNED NOT NULL AUTO_INCREMENT,
