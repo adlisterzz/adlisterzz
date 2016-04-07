@@ -54,6 +54,11 @@ if($_POST) {
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <link href="/css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="/css/footer-distributed.css" rel="stylesheet" type="text/css" />
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -72,6 +77,9 @@ if($_POST) {
     <![endif]-->
   </head>
 <body>
+<?php include_once 'stricklandNavbarAuth.php'; ?>
+<hr>
+<hr>
 <form class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
   <div class="form-group">
     <label class="control-label col-sm-2" for="name">Propane Name:</label>
@@ -122,4 +130,9 @@ if($_POST) {
     </div>
   </div>
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<hr>
+<?php include_once 'stricklandFooter.php'; ?>
 </body>

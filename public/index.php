@@ -28,6 +28,7 @@ session_start();
     <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
     <link href="/css/footer-distributed.css" rel="stylesheet" type="text/css" />
+    <link href="/css/buttons.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>

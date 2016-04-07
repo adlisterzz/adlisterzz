@@ -64,6 +64,12 @@ if (Input::get('Password') === Input::get('Password2')) {
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="/css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="/css/footer-distributed.css" rel="stylesheet" type="text/css" />
+    <link href="/css/buttons.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -73,6 +79,9 @@ if (Input::get('Password') === Input::get('Password2')) {
   </head>
 
   <body>
+  <hr>
+  <hr>
+  <?php include_once 'stricklandNavbar.php'; ?>
 
     <div class="container">
 
@@ -90,7 +99,7 @@ if (Input::get('Password') === Input::get('Password2')) {
         <input name="Password2"type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <label for="inputPassword2" class="sr-only">Re-Enter Password</label>
         <input name="Password" type="password" id="inputPassword2" class="form-control" placeholder="Re-Enter Password" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+        <button id="btn_cu" class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
       </form>
 
     </div> <!-- /container -->
@@ -98,6 +107,11 @@ if (Input::get('Password') === Input::get('Password2')) {
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> -->
+    <hr>
+    <?php include_once 'stricklandFooter.php'; ?>
   </body>
 </html>

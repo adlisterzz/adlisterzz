@@ -1,12 +1,14 @@
 <?php
 
-DEFINE('DB_PASS', 'codeup1');
-DEFINE('DB_USER', 'codeup1');
-DEFINE('DB_NAME', 'dbname=ad');
-DEFINE('DB_HOST', 'mysql:host=127.0.0.1;');
+// DEFINE('DB_PASS', 'codeup1');
+// DEFINE('DB_USER', 'codeup1');
+// DEFINE('DB_NAME', 'dbname=ad');
+// DEFINE('DB_HOST', 'mysql:host=127.0.0.1;');
 
 
 require '../utils/Input.php';
+
+// session_start();
 
 function pageController()
 {
@@ -89,9 +91,9 @@ extract(pageController());
                         <h1 class="pull-right">$<?php echo $propane ['price'] ?></h1>
                         <h1><a href="#"></a><?php echo $propane ['name'] ?></a>
                         </h1>
-                        <h4><a href="#"></a><?php echo $propane ['maker'] ?></a>
+                        <h4><a href="#"></a><?php echo 'Maker - ' . $propane ['maker'] ?></a>
                         </h4>
-                        <h4><a href="#"></a><?php echo $propane ['grade'] ?> / <?php echo $propane ['type'] ?></a>
+                        <h4><a href="#"></a><?php echo 'Grade -  '. $propane ['grade'] ?> / <?php echo 'Type - ' . $propane ['type'] ?></a>
                         </h4>
                         <p><?php echo $propane ['description'] ?></p>
                         

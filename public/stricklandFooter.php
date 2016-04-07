@@ -11,7 +11,7 @@
            		<button type="submit" class="btn btn-default">Submit</button>
       		</form>
 
-      		<a class="navbar-right addPadding" href="http://www.ad-lister.dev"><img src="/img/strickland4.jpeg"></a>
+      		<a class="navbar-right addPadding" href="index.php"><img src="/img/strickland4.jpeg"></a>
 
       		<ul class="nav navbar-nav center-block centeredMediaButtons">
             	<li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>

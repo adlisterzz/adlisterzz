@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 
 ?>
 
@@ -28,7 +29,15 @@
 
 <body>
 
-    <?php include_once 'stricklandNavbar.php'; ?>
+    <?php if (isset($_SESSION['logged_in_user'])): ?>
+
+        <?php include_once 'stricklandNavbarAuth.php'; ?>
+
+    <?php  else: ?>
+
+        <?php include_once 'stricklandNavbar.php'; ?>
+        
+    <?php endif ?>
     <?php include_once 'stricklandFooter.php'; ?>
 
     <div class="container margin100">
