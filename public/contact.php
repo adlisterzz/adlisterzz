@@ -56,10 +56,22 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
+                                    <h4 class="modal-title">
+                                        <ul class="navbar-nav nav padModal">
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                                            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                                            <li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>
+                                        <h4>Phone: (555)345-6789</h4>
+                                        <h4>Cell: (555)345-6789</h4>
+                                        <h4>E-Mail: buck.strickland@gmail.com</h4>
+                                        <h4>Fax: (555)345-6789</h4>
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -75,16 +87,28 @@
                     <h2>Hank Hill</h2>
                     <h3>Associate Manager</h3>
                     <p> Employee of the month for 41 consecutive months!  </p>
-                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Contact Me!</button></p>
-                    <div id="myModal" class="modal fade" role="dialog">
+                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2">Contact Me!</button></p>
+                    <div id="myModal2" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
+                                    <h4 class="modal-title">
+                                        <ul class="navbar-nav nav padModal">
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                                            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                                            <li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>
+                                        <h4>Phone: (555)345-6789</h4>
+                                        <h4>Cell: (555)345-6789</h4>
+                                        <h4>E-Mail: ITellYouHwat@gmail.com</h4>
+                                        <h4>Fax: (555)345-6789</h4>
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -102,16 +126,28 @@
                     <h2>Joe Jack</h2>
                     <h3>Grill Associate</h3>
                     <p> Proudly serving Arlen's grill needs for the last 3 years.  </p>
-                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Contact Me!</button></p>
-                    <div id="myModal" class="modal fade" role="dialog">
+                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal3">Contact Me!</button></p>
+                    <div id="myModal3" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
+                                    <h4 class="modal-title">
+                                        <ul class="navbar-nav nav padModal">
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                                            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                                            <li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>
+                                        <h4>Phone: (555)345-6789</h4>
+                                        <h4>Cell: (555)345-6789</h4>
+                                        <h4>E-Mail: JoeJack@gmail.com</h4>
+                                        <h4>Fax: (555)345-6789</h4>
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -127,16 +163,28 @@
                     <h2>Enrique</h2>
                     <h3>Truck Driver</h3>
                     <p> Enrique's enjoyed the benefits of the propane lifestyle for 2 years.</p>
-                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Contact Me!</button></p>
-                    <div id="myModal" class="modal fade" role="dialog">
+                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal4">Contact Me!</button></p>
+                    <div id="myModal4" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
+                                    <h4 class="modal-title">
+                                        <ul class="navbar-nav nav padModal">
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                                            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                                            <li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>
+                                        <h4>Phone: (555)345-6789</h4>
+                                        <h4>Cell: (555)345-6789</h4>
+                                        <h4>E-Mail: SpanishFly@gmail.com</h4>
+                                        <h4>Fax: (555)345-6789</h4>
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -154,16 +202,28 @@
                     <h2>Donna</h2>
                     <h3>From Accounting</h3>
                     <p> Donna's been cooking the books for Strickland for 2 years.  </p>
-                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Contact Me!</button></p>
-                    <div id="myModal" class="modal fade" role="dialog">
+                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal5">Contact Me!</button></p>
+                    <div id="myModal5" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
+                                    <h4 class="modal-title">
+                                        <ul class="navbar-nav nav padModal">
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                                            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                                            <li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>
+                                        <h4>Phone: (555)345-6789</h4>
+                                        <h4>Cell: (555)345-6789</h4>
+                                        <h4>E-Mail: DonnaFromAccounting@gmail.com</h4>
+                                        <h4>Fax: (555)345-6789</h4>
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -179,16 +239,28 @@
                     <h2>Roger Sack</h2>
                     <h3>Associate</h3>
                     <p> The store comedian, Roger's been with us for 1 year.</p>
-                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Contact Me!</button></p>
-                    <div id="myModal" class="modal fade" role="dialog">
+                    <p><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal6">Contact Me!</button></p>
+                    <div id="myModal6" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
+                                    <h4 class="modal-title">
+                                        <ul class="navbar-nav nav padModal">
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                                            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                                            <li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                    <p>
+                                        <h4>Phone: (555)345-6789</h4>
+                                        <h4>Cell: (555)345-6789</h4>
+                                        <h4>E-Mail: BoodaSacks420@gmail.com</h4>
+                                        <h4>Fax: (555)345-6789</h4>
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

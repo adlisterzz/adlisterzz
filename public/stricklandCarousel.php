@@ -14,7 +14,7 @@
             <div class="carousel-caption">
               <h1 class="impactText">Wanna get in on the action?</h1>
               <p class="impactText"> Is buying and selling propane and propane accessories your thing? Whether you're heating your mobile home or Grand Pappy's old still, we've got you covered!</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today!!</a></p>
+              <p><a class="btn btn-lg btn-primary" href="http://ad-lister.dev/users.create.php" role="button">Sign up today!!</a></p>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <div class="carousel-caption">
               <h1 class="impactText">Propane and Propane Accessories Since 1973</h1>
               <p class="impactText"> Stop by any one of our 4 locations and let us indoctrinate you into the propane lifestyle.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.ad-lister.dev/about.html" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
             <div class="carousel-caption">
               <h1 class="impactText">Don't miss out on our annual "Grillstravanganza"!</h1>
               <p class="impactText"> Including grills such as the Vogner Char-King, Char-King Imperiale and Vogner Citizen! Stick around for special performances by the Propaniacs!</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-primary" href="http://ad-lister.dev/accessories.show.php" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
