@@ -2,6 +2,13 @@
 	margin-top: 100px;
 }
 
+.fontSize48{
+	font-size: 48px;
+}
+.marginLeft100{
+	margin-left: 100px;
+}
+
 .featuretteImage{
 	height: 300px;
 	width: 450px;
@@ -48,6 +55,8 @@
 }
 
 .jumbotron{
+	width: 80%;
+	margin-left: 240px;
 	height: 300px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -111,4 +120,8 @@
 .padModal{
 	padding-right: 31%;
 	padding-left: 31%;
+}
+
+.pad40{
+	padding-top: 40px;
 }
