@@ -32,7 +32,7 @@ class User extends Model
     protected function update()
     {
         $update = 'UPDATE users SET firstname = :firstname, lastname = :lastname,
-                   email = :email, password = :password, username = :usdername WHERE id = :id';
+                   email = :email, password = :password, username = :username WHERE id = :id';
         $statement = self::$dbc->prepare($update);
         foreach ($this->attributes as $key => $value) {
             $statement->bindValue(":$key", $value, PDO::PARAM_STR);

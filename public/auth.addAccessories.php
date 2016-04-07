@@ -1,7 +1,8 @@
 <?php
 require_once '../utils/Input.php';
-require_once '../models/PropaneModel.php';
+require_once '../models/AccessoriesModel.php';
 require_once '../utils/Auth.php';
+require_once '../models/User.php';
 
 session_start();
 
@@ -10,20 +11,17 @@ session_start();
 //     die();
 // }
 
-$propane = new Propane ([
+$acessories = new Accessories ([
 
-		'name'=> Input::get('name'),
-		'maker'=> Input::get('maker'),
-		'grade'=> Input::get('grade'),
+		'category'=> Input::get('category'),
 		'type'=> Input::get('type'),
 		'price'=> Input::get('price'),
 		'description'=> Input::get('description'),
-		'image'=> Input::uploadImage('image'),
-		'user_id'=>Auth::user()->id,
+    'user_id'=>Auth::user()->id,
 		
 		]);
 
-$propane->save();
+$acessories->save();
 
 	   
 
@@ -40,7 +38,7 @@ $propane->save();
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Add Your Propane</title>
+    <title>Add Your Propane and Propane Accessories!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
@@ -62,23 +60,11 @@ $propane->save();
     <![endif]-->
   </head>
 <body>
-<form class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
+<form class="form-horizontal" role="form" method="post">
   <div class="form-group">
-    <label class="control-label col-sm-2" for="name">Propane Name:</label>
+    <label class="control-label col-sm-2" for="category">Category Name:</label>
     <div class="col-sm-10">
-      <input name="name" type="text" class="form-control" id="name" placeholder="Propane Name">
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="maker">Maker:</label>
-    <div class="col-sm-10"> 
-      <input name="maker" type="text" class="form-control" id="maker" placeholder="Enter Maker">
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="grade">Grade:</label>
-    <div class="col-sm-10"> 
-      <input name="grade" type="text" class="form-control" id="grade" placeholder="Enter Grade">
+      <input name="category" type="text" class="form-control" id="category" placeholder="Category Name">
     </div>
   </div>
   <div class="form-group">
@@ -97,13 +83,6 @@ $propane->save();
     <label class="control-label col-sm-2" for="descr">Description:</label>
     <div class="col-sm-10"> 
       <input name="description" type="text" class="form-control" id="descr" placeholder="Enter Description">
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="img">Image:</label>
-    <div class="col-sm-10"> 
-      <input name="image" type="file" name="fileToUpload" id="fileToUpload">
-      <input name="image" type="submit" value="Upload Image" name="submit">
     </div>
   </div>
   <div class="form-group"> 

@@ -31,7 +31,7 @@ class Auth
 		if (!is_null($user)) {
 		if (password_verify($password, $user->password)) 
 		{
-    	 $_SESSION['logged_in_user'] = $username;
+    	 $_SESSION['logged_in_user'] = serialize($user);
     	 return true;
     	 // $logInfo->logInfo("User " . $username . " is logged in. ");
     	 
@@ -71,7 +71,8 @@ class Auth
 	
 	{
 	 
-	 return $_SESSION['logged_in_user'];
+	 return unserialize($_SESSION['logged_in_user']);
+
 			
 	}
 
