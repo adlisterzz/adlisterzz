@@ -24,6 +24,7 @@
             <li><a href="accessories.index.php">Propane Accessories</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Site</li>
+
             <li><a href="giftshop_index.php">Strickland Gift Shop</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact Us</a></li>
