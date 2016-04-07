@@ -11,18 +11,29 @@ session_start();
 //     die();
 // }
 
-$acessories = new Accessories ([
+$error = "";
+if($_POST) {
 
-		'category'=> Input::get('category'),
-		'type'=> Input::get('type'),
-		'price'=> Input::get('price'),
-		'description'=> Input::get('description'),
-    'user_id'=>Auth::user()->id,
-		
-		]);
+  $image = Input::uploadImage('image');
+  if ($image === false) {
 
-$acessories->save();
+    $error = "Image was not uploaded";
+  } else {
 
+          $acessories = new Accessories ([
+
+      		'category'=> Input::get('category'),
+      		'type'=> Input::get('type'),
+      		'price'=> Input::get('price'),
+      		'description'=> Input::get('description'),
+          'user_id'=>Auth::user()->id,
+          'image'=> "/img/$image",
+      		
+      		]);
+
+            $acessories->save();
+  }
+ } 
 	   
 
 ?>
@@ -60,7 +71,7 @@ $acessories->save();
     <![endif]-->
   </head>
 <body>
-<form class="form-horizontal" role="form" method="post">
+<form class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
   <div class="form-group">
     <label class="control-label col-sm-2" for="category">Category Name:</label>
     <div class="col-sm-10">
@@ -83,6 +94,12 @@ $acessories->save();
     <label class="control-label col-sm-2" for="descr">Description:</label>
     <div class="col-sm-10"> 
       <input name="description" type="text" class="form-control" id="descr" placeholder="Enter Description">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="img">Image:</label>
+    <div class="col-sm-10"> 
+      <input name="image" type="file" name="fileToUpload" id="fileToUpload">
     </div>
   </div>
   <div class="form-group"> 
