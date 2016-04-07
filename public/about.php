@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 
 ?>
 
@@ -28,7 +30,15 @@
 
 <body>
 
-    <?php include_once 'stricklandNavbar.php'; ?>
+    <?php if (isset($_SESSION['logged_in_user'])): ?>
+
+        <?php include_once 'stricklandNavbarAuth.php'; ?>
+
+    <?php  else: ?>
+
+        <?php include_once 'stricklandNavbar.php'; ?>
+        
+    <?php endif ?>
     <?php include_once 'stricklandFooter.php'; ?>
 
     <div class="container margin100">
@@ -66,12 +76,12 @@
     
 
     <!-- FOOTER -->
-      <footer>
+      <!-- <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
-    </div><!-- /.container -->
+    </div><!-- /.container --> -->
 
 
     <!-- Bootstrap core JavaScript

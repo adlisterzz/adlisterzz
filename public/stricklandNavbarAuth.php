@@ -52,7 +52,7 @@ $user = Auth::user();
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Actions</li>
             <li><a href="auth.addPropane.php">Add Propane</a></li>
-            <li><a href="#">Add Propane and Propane Accessories</a></li>
+            <li><a href="auth.addAccessories.php">Add Propane and Propane Accessories</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="User.logout.php">Logout</a></li>
           </ul>  

@@ -1,9 +1,11 @@
 <?php
 
-DEFINE('DB_PASS', 'codeup1');
-DEFINE('DB_USER', 'codeup1');
-DEFINE('DB_NAME', 'ad');
-DEFINE('DB_HOST', '127.0.0.1');
+// DEFINE('DB_PASS', 'codeup1');
+// DEFINE('DB_USER', 'codeup1');
+// DEFINE('DB_NAME', 'ad');
+// DEFINE('DB_HOST', '127.0.0.1');
+
+require_once "../database/db_connect.php";
 
 //abstract = write your methods (only!) on a child class
 abstract class Model
