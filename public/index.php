@@ -1,8 +1,6 @@
 <?php
 
 session_start();
-require_once '../utils/Input.php';
-require_once '../utils/Auth.php';
 
 
 ?>
@@ -34,10 +32,19 @@ require_once '../utils/Auth.php';
 
   <body>
     
-    <?php include_once 'stricklandNavbar.php'; ?>
+    
     <?php include_once 'stricklandCarousel.php'; ?>
     <?php include_once 'stricklandFooter.php'; ?>
 
+<?php if (isset($_SESSION['logged_in_user'])): ?>
+
+      <?php include_once 'stricklandNavbarAuth.php'; ?>
+
+    <?php  else: ?>
+
+      <?php include_once 'stricklandNavbar.php'; ?>
+      
+    <?php endif ?>
 
 
     <!-- Marketing messaging and featurettes
@@ -58,7 +65,7 @@ require_once '../utils/Auth.php';
           <img class="img-circle" src="/img/PropaneAccessories.jpeg" width="140" height="140">
           <h2>Propane Accessories</h2>
           <p> You have propane. We have accessories. Camping? RVing? Does a friend need to hold your beer for this one? </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="accessories.index.php" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -112,6 +119,7 @@ require_once '../utils/Auth.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
     
   </body>
 </html>

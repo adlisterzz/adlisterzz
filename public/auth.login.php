@@ -15,27 +15,13 @@ Auth::attempt($username, $password);
 if (Auth::check() == true)
 {
     
-    header("Location: ads.index.php");
+    header("Location: index.php");
     die();
+} else {
+
+  echo '<script language="javascript">alert ("Your password and username combination is incorrect!");</script>';
+  // echo '<script type="text/javascript">window.history.go(-1);</script>';
 }
-var_dump($_SESSION);
-
-// if ($_POST && !Auth::attempt($username, $password)){
-
-//   echo '<script language="javascript">alert ("Your password and username combination is incorrect!");</script>';
-//   echo '<script type="text/javascript">window.history.go(-1);</script>';
-// } else {
-
-//     // header("Location: index.php");
-//     // die();
-// }
-
-
-
-
-    
-
-
 
 ?>
 
