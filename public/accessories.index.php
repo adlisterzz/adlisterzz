@@ -48,22 +48,31 @@
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-    
+    <!-- Custom CSS -->
     <link href="css/carousel.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
     <link href="css/footer-distributed.css" rel="stylesheet" type="text/css" />
-    <link href="css/jumbotron.css" rel="stylesheet">
-     <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/shop-item.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css"> 
     
     
   </head>
 
   <body>
 
-    <?php include_once 'stricklandNavbar.php'; ?>
+    <?php if (isset($_SESSION['logged_in_user'])): ?>
+
+        <?php include_once 'stricklandNavbarAuth.php'; ?>
+
+    <?php  else: ?>
+
+        <?php include_once 'stricklandNavbar.php'; ?>
+        
+    <?php endif ?>
     <?php include_once 'stricklandFooter.php'; ?>
-    <?php include_once 'stricklandSidebar.php'; ?>
+    <?php include_once 'stricklandNarrowJumbotronSidebar.php'; ?>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     
@@ -71,7 +80,7 @@
       <img src="/img/propaneTank.png" class="navbar-left">
       <img src="/img/propaneTank.png" class="navbar-right">
       <div class="container">
-        <h1 class="impactText">Propane Accessories</h1>
+        <h class="impactText fontSize48">Propane Accessories</h>
       </div>
     </div>
 
