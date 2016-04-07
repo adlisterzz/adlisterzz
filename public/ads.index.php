@@ -89,9 +89,9 @@ extract(pageController());
     <div class="container">
       <!-- Example row of columns -->
       <?php foreach (array_chunk($propanes, 3) as $three_propanes):?>
-      <div class="row">
+      <div class="row adjustForSidebar">
         <?php foreach ($three_propanes as $propane): ?>
-        <div class="col-md-4">
+        <div id="paddingForListings" class="col-lg-4">
           <h2><?php echo $propane ['name']?></h2> 
           <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>" height="120" width="120">
           <hr>
