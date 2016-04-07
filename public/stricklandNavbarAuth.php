@@ -1,8 +1,10 @@
 <?php
 require_once '../utils/Input.php';
 require_once '../utils/Auth.php';
+require_once '../models/User.php';
 
-$username = Auth::user();
+$user = Auth::user();
+
 ?>
 
 
@@ -41,7 +43,7 @@ $username = Auth::user();
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><p class="navbar-text"><?php echo $username . " is logged in!!"?></p></li> 
+        <li><p class="navbar-text"><?php echo $user->username . " is logged in!!"?></p></li> 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>My Options</b> <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -49,7 +51,7 @@ $username = Auth::user();
             <li><a href="#">My Profile</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Actions</li>
-            <li><a href="#">Add Propane</a></li>
+            <li><a href="auth.addPropane.php">Add Propane</a></li>
             <li><a href="#">Add Propane and Propane Accessories</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="User.logout.php">Logout</a></li>
