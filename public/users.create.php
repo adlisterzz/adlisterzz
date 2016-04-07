@@ -3,6 +3,7 @@
 require_once '../models/User.php';
 require_once '../utils/Input.php';
 require_once '../models/BaseModel.php';
+require_once '../utils/Auth.php';
 
 
 
@@ -18,6 +19,18 @@ if (Input::get('Password') === Input::get('Password2')) {
         ]);
 
     $user->save();
+
+    $username = Input::get('username');
+    $password = Input::get('password');
+    session_start();
+    Auth::attempt($username, $password);
+        if (Auth::check() == true)
+        {
+    
+        header("Location: index.php");
+        die();
+        }
+
 } else {
     echo '<script language="javascript">alert ("Your passwords do not match!");</script>';
     echo '<script type="text/javascript">window.history.go(-1);</script>';

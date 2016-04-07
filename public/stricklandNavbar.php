@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-left" href="http://www.ad-lister.dev"><img src="/img/strickland4.jpeg"></a>
+      <a class="navbar-left" href="index.php"><img src="/img/strickland4.jpeg"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,13 +20,14 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump to a section <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">Buy/Sell</li>
-            <li><a href="#">Propane</a></li>
-            <li><a href="#">Propane Accessories</a></li>
+            <li><a href="ads.index.php">Propane</a></li>
+            <li><a href="accessories.index.php">Propane Accessories</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Site</li>
-            <li><a href="#">Strickland Gift Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Tell Us Hwat</a></li>
+
+            <li><a href="giftshop_index.php">Strickland Gift Shop</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
             <li><a href="#">Check out the Propaniacs</a></li>
           </ul>
         </li>
@@ -46,14 +47,14 @@
                                     <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                 </div>
                                 or
-                                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                 <form class="form" role="form" method="post" action="auth.login.php" accept-charset="UTF-8" id="login-nav">
                                         <div class="form-group">
-                                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                             <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                             <label class="sr-only" for="exampleInputEmail2">Username</label>
+                                             <input name="username" type="username" class="form-control" id="exampleInputEmail2" placeholder="Username" required>
                                         </div>
                                         <div class="form-group">
                                              <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                             <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <input name="password" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
                                              <div class="help-block text-right"><a href="">Forget the password ?</a></div>
                                         </div>
                                         <div class="form-group">
@@ -67,7 +68,7 @@
                                  </form>
                             </div>
                             <div class="bottom text-center">
-                                New here ? <a href="#"><b>Join Us</b></a>
+                                New here ? <a href="users.create.php"><b>Join Us</b></a>
                             </div>
                      </div>
                 </li>
