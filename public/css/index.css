@@ -125,3 +125,22 @@
 .pad40{
 	padding-top: 40px;
 }
+#btn_cu {
+
+	background-color: #3a3a3a;
+	border-color: #3a3a3a;
+}
+
+
+.btn-primary:hover{
+
+	background-color: #3a3a3a;
+	border-color: #3a3a3a;
+}
+
+.btn-primary{
+
+	background-color: #3a3a3a;
+	border-color: #3a3a3a;
+
+}
