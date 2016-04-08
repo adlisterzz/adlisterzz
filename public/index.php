@@ -78,7 +78,7 @@ session_start();
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">How to pick the right propane for the job. <span class="text-muted"> It'll blow your mind.</span></h2>
+          <h2 class="featurette-heading">How to pick the right propane for the job. <span class="text-muted"><a href="ads.index.php"> It'll blow your mind.</a></span></h2>
           <p class="lead"> At Strickland, we know what lights your fire: Propane. And only the finest. That's why we hand select our propane only from USDA certified, free-range, GMO free, organic propane farms. </p>
         </div>
         <div class="col-md-5">
@@ -90,7 +90,7 @@ session_start();
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Which propane accesories fit my active adult lifestyle? <span class="text-muted">See for yourself.</span></h2>
+          <h2 class="featurette-heading">Which propane accesories fit my active adult lifestyle? <span class="text-muted"><a href="accessories.index.php">See for yourself.</a></span></h2>
           <p class="lead"> You'll be grilling up a storm in no time with our top of the line gills and grill accessories.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
@@ -102,7 +102,7 @@ session_start();
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Done acceossirizing your propane? Ready to accessorize your body? <span class="text-muted">It's lit fam.</span></h2>
+          <h2 class="featurette-heading">Done acceossirizing your propane? Ready to accessorize your body? <span class="text-muted"><a href="giftshop_index.php">It's lit fam.</a></span></h2>
           <p class="lead"> Stay up to date with the finest in this seasons propane fashions.</p>
         </div>
         <div class="col-md-5">
