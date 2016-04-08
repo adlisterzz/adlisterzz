@@ -1,11 +1,5 @@
 <?php
 
-// DEFINE('DB_PASS', 'codeup1');
-// DEFINE('DB_USER', 'codeup1');
-// DEFINE('DB_NAME', 'dbname=ad');
-// DEFINE('DB_HOST', 'mysql:host=127.0.0.1;');
-
-// require '../database/db_connect.php';
 
 session_start();
 
