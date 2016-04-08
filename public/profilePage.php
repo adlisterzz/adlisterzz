@@ -1,9 +1,6 @@
 <?php
 
 
-// require '../utils/Input.php';
-// require '../utils/Auth.php';
-
 session_start();
 
 function pageController()
@@ -19,6 +16,23 @@ $users = $statement->fetch();
 
 return array(
   'users' => $users
+  
+  );
+
+// $id = Input::get('id');
+
+$user_id = Auth::user()->id;
+$query = "SELECT * FROM propane WHERE user_id = :user_id" ;
+$statement = $dbc->prepare($query);
+$statement->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+$statement->execute();
+$propanes = $statement->fetch();
+
+
+// $propanes = $statement->fetch(PDO::FETCH_ASSOC);
+
+return array(
+  'propane' => $propanes
   
   );
 
@@ -109,18 +123,38 @@ extract(pageController());
                 </div>
               </div>
             </div>
-                 <!-- <div class="panel-footer">
-                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
-                        <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
-                        </span>
-                    </div> -->
+                 
             
           </div>
         </div>
       </div>
     </div>
+
+<div class="container">
+      <!-- Example row of columns -->
+      
+        <?php foreach (array_chunk($propanes, 3) as $three_propane): ?>
+        <div class="row adjustForSidebar">    
+        <?php foreach ($three_propane as $propane):?>
+        <div class="col-md-4" id="paddingForListings">
+          <h2><?php echo $propane ['type']?></h2> 
+          <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>" height="120" width="120" >
+          <hr>
+          <p><?php echo 'Description - ' . ''. $propane ['description'] ?></p> 
+        </div>
+        <?php endforeach; ?>
+        </div>
+        <?php endforeach; ?>
+
+      <footer>
+      <p>&copy; 2015 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
