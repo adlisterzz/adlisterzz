@@ -23,9 +23,13 @@ session_start();
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet">
-    <link href="/css/index.css" rel="stylesheet">
-     <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="/css/footer-distributed.css" rel="stylesheet" type="text/css" />
+    <link href="/css/jumbotron.css" rel="stylesheet" type="text/css" />
+    
 </head>
 
 <body>
@@ -41,47 +45,41 @@ session_start();
     <?php endif ?>
     <?php include_once 'stricklandFooter.php'; ?>
 
-    <div class="container margin100">
+    <div class="container">
 
-      <div class="jumbotron stricklandPic">
-      
-      </div>
+      <div id="jumbotron1" class="jumbotron stricklandPic">
+</div>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Our beginnings...</h4>
-          <p>Strickland Propane was started by Buck Strickland in 1976 to supply Texas' propane needs.</p>
+          <div class="row marketing">
+            
+            <div class="col-lg-6">
+              <h4>Our beginnings...</h4>
+              <p>Strickland Propane was started by Buck Strickland in 1976 to supply Texas' propane needs.</p>
 
-          <h4>Headquarters</h4>
-          <p>Strickland Propane's main headquarters are located at 135 Los Gatos Road, in Arlen, Texas.</p>
+              <h4>Headquarters</h4>
+              <p>Strickland Propane's main headquarters are located at 135 Los Gatos Road, in Arlen, Texas.</p>
           
-          <h4>Slogan</h4>
-          <p>Taste the meat, not the heat.</p>
-        </div>
+              <h4>Slogan</h4>
+              <p>Taste the meat, not the heat.</p>
+            </div>
 
-        <div class="col-lg-6">
-          <h4>Other locations</h4>
-          <p>Strickland Propane has five branch offices in Texas, known as Strickland Propane, Strickland North, South, East, and West.</p>
+            <div class="col-lg-6">
+              <h4>Other locations</h4>
+              <p>Strickland Propane has five branch offices in Texas, known as Strickland Propane, Strickland North, South, East, and West.</p>
           
-          <h4>The Propaniacs</h4>
-          <p>Strickland Propane's in house comedy troupe.</p>
+              <h4>The Propaniacs</h4>
+              <p>Strickland Propane's in house comedy troupe.</p>
 
-          <h4>Grillstravaganza</h4>
-          <p>Strickland Propane's annual propane and propane accessory sale.</p>
+              <h4>Grillstravaganza</h4>
+              <p>Strickland Propane's annual propane and propane accessory sale.</p>
+            </div>
+          
+          </div>
         </div>
-      </div>
-
-    </div>
        
     
 
-    <!-- FOOTER -->
-      <!-- <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
 
-    </div><!-- /.container --> -->
 
 
     <!-- Bootstrap core JavaScript

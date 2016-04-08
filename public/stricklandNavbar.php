@@ -28,7 +28,7 @@
             <li><a href="giftshop_index.php">Strickland Gift Shop</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact Us</a></li>
-            <li><a href="#">Check out the Propaniacs</a></li>
+            <li><a href="http://kisscartoon.me/Cartoon/King-of-the-Hill/S04E20-Meet-the-Propaniacs?id=7048" target="_blank">Check out the Propaniacs</a></li>
           </ul>
         </li>
       </ul>
