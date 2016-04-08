@@ -1,6 +1,5 @@
 <?php
 
-
 session_start();
 
 function pageController()
@@ -118,8 +117,8 @@ extract(pageController());
                     </tbody>
                   </table>
                   
-                  <a href="#" class="btn btn-primary">Add some Propane!</a>
-                  <a href="#" class="btn btn-primary">Add some Propane Accessories!</a>
+                  <a href="auth.addPropane.php" class="btn btn-primary">Add some Propane!</a>
+                  <a href="auth.addAccessories.php" class="btn btn-primary">Add some Propane Accessories!</a>
                 </div>
               </div>
             </div>
@@ -130,26 +129,6 @@ extract(pageController());
       </div>
     </div>
 
-<div class="container">
-      <!-- Example row of columns -->
-      
-        <?php foreach (array_chunk($propanes, 3) as $three_propane): ?>
-        <div class="row adjustForSidebar">    
-        <?php foreach ($three_propane as $propane):?>
-        <div class="col-md-4" id="paddingForListings">
-          <h2><?php echo $propane ['type']?></h2> 
-          <img src="<?php echo $propane ['image'] ?>"alt="<?php echo $propane['name']?>" height="120" width="120" >
-          <hr>
-          <p><?php echo 'Description - ' . ''. $propane ['description'] ?></p> 
-        </div>
-        <?php endforeach; ?>
-        </div>
-        <?php endforeach; ?>
-
-      <footer>
-      <p>&copy; 2015 Company, Inc.</p>
-      </footer>
-    </div> <!-- /container -->
 
 
 
