@@ -13,9 +13,6 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Strickland's Propane and Propane Accessories</title>
 
@@ -23,12 +20,12 @@ session_start();
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet" type="text/css">
-    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="/css/carousel.css" rel="stylesheet" type="text/css" />
     <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css" />
     <link href="/css/footer-distributed.css" rel="stylesheet" type="text/css" />
-    <link href="/css/buttons.css" rel="stylesheet" type="text/css" />
+    
   </head>
 
   <body>
