@@ -48,7 +48,7 @@ $user = Auth::user();
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>My Options</b> <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">Profile</li>
-            <li><a href="#">My Profile</a></li>
+            <li><a href="profilePage.php">My Profile</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Actions</li>
             <li><a href="auth.addPropane.php">Add Propane</a></li>
